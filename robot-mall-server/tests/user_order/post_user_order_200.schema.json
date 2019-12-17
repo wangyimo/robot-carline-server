@@ -1,0 +1,28 @@
+    {
+        "real_price": {
+          "type": "number"
+        },
+        "discount_price": {
+          "type": "number"
+        },
+        "total_amount": {
+          "type": "number"
+        },
+        "order_id": {
+          "type": "string"
+        },
+        "pay_expire_time": {
+          "type": "string"
+        },
+        "created_time": {
+          "type": "number"
+        },
+      "required": [
+        "real_price",
+        "discount_price",
+        "total_amount",
+        "order_id",
+        "pay_expire_time",
+        "created_time"
+      ]
+    }

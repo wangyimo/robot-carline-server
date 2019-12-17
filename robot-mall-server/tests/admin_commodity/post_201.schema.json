@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "commodity_id": {"type":"string"},
+    "created_time": {"type":"number"}
+  },
+  "required":[
+    "commodity_id",
+    "created_time"
+  ]
+}

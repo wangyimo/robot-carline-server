@@ -1,0 +1,37 @@
+{
+  "definitions": {
+    "commodities": {
+        "type":"object",
+      "properties":{
+        "commodity_id": {"type":"string"},
+        "commodity_name": {"type":"string"},
+        "subtitle": {"type":"string"},
+        "commodity_images": {"type":"array"},
+        "commodity_videos": {"type":"array"},
+        "commodity_description": {"type":"string"},
+        "shelf_time": {"type":["null","number"]},
+        "removal_time": {"type":["null","number"]},
+        "sales_status": {"type":"number"},
+        "created_time": {"type":"number"},
+        "updated_time": {"type":"number"},
+        "specifications": {"type":"array"}
+      },
+      "required": [
+        "commodity_id",
+        "commodity_name",
+        "subtitle",
+        "commodity_images",
+        "commodity_videos",
+        "commodity_description",
+        "shelf_time",
+        "removal_time",
+        "sales_status",
+        "created_time",
+        "updated_time",
+        "specifications"
+      ]
+    }
+  },
+  "type": "object",
+  "$ref": "#/definitions/commodities"
+}

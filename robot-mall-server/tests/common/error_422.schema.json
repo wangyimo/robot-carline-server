@@ -1,0 +1,41 @@
+{
+  "definitions": {
+    "error_422": {
+      "type": "object",
+      "properties": {
+        "message": {"type": "string"},
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "anyOf": [{
+              "type": "object",
+              "$ref": "#/definitions/error_422_field"
+            }, {
+              "type": "object",
+              "$ref": "#/definitions/error_422_resource"
+            }]
+          }
+        }
+      }
+    },
+    "error_422_field": {
+      "type": "object",
+      "properties": {
+        "field": {"type": "string"},
+        "code": {"type": "string"}
+      },
+      "required": ["field", "code"]
+    },
+    "error_422_resource": {
+      "type": "object",
+      "properties": {
+        "resource": {"type": "string"},
+        "code": {"type": "string"}
+      },
+      "required": ["resource", "code"]
+    }
+  },
+  "type": "object",
+  "$ref": "#/definitions/error_422"
+}

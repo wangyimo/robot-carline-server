@@ -1,0 +1,16 @@
+{
+  "timeStamp":{"type": "string"},
+  "paySign":{"type": "string"},
+  "appId":{"type": "string"},
+  "package":{"type": "string"},
+  "signType":{"type": "string"},
+  "nonceStr":{"type": "string"},
+  "required": [
+    "timeStamp",
+    "paySign",
+    "appId",
+    "package",
+    "signType",
+    "nonceStr"
+  ]
+}
